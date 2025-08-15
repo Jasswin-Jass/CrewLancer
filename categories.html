@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>CrewLance</title>
+        <meta
+            name="description"
+            content="Freelancer-to-freelancer collaboration platform with escrow and revenue splits."
+        />
+        <link rel="icon" href="assets/logo.svg" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container nav">
+                <a class="brand" href="index.html"
+                    ><img src="assets/logo.svg" alt="CrewLance logo" /><span
+                        class="xlfont"
+                        >CrewLance</span
+                    ></a
+                >
+                <nav class="navlinks" aria-label="Primary">
+                    <a href="categories.html">Categories</a>
+                    <a href="collaborations.html">Collaborations</a>
+                    <a href="creat-collab.html">Creat Colab</a>
+                    <a href="how-it-works.html">How it Works</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a class="button cta" href="login.html">Sign In</a>
+                </nav>
+                <div class="mobile">
+                    <button
+                        class="button ghost"
+                        data-toggle
+                        aria-label="Open menu"
+                        style="background-color: #4b007e"
+                    >
+                        Menu
+                    </button>
+                </div>
+            </div>
+            <div class="drawer" data-drawer>
+                <a href="categories.html">Categories</a>
+                <a href="collaborations.html">Collaborations</a>
+                <a href="creat-collab.html">Creat Colab</a>
+                <a href="how-it-works.html">How it Works</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </header>
+
+        <main class="container section">
+            <h1 class="title" style="font-size: 40px">Browse Categories</h1>
+            <p class="subtitle">
+                Modeled after marketplace clarity: simple cards, clear tags,
+                easy scanning.
+            </p>
+            <h2 id="design" class="reveal">Design & Creative</h2>
+            <div class="grid cols-3" style="margin: 10px 0 32px">
+                <div class="card reveal">
+                    <h3>UI/UX Design</h3>
+                    <p class="subtitle">
+                        Wireframes, prototypes, design systems
+                    </p>
+                </div>
+                <div class="card reveal">
+                    <h3>Branding</h3>
+                    <p class="subtitle">Logos, guidelines, identity kits</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Web Design</h3>
+                    <p class="subtitle">Marketing sites, landing pages</p>
+                </div>
+            </div>
+            <h2 id="dev" class="reveal">Development & Tech</h2>
+            <div class="grid cols-3" style="margin: 10px 0 32px">
+                <div class="card reveal">
+                    <h3>Frontend</h3>
+                    <p class="subtitle">React, Next.js, Vue</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Backend</h3>
+                    <p class="subtitle">Node.js, Django, APIs</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Mobile</h3>
+                    <p class="subtitle">React Native, Flutter</p>
+                </div>
+            </div>
+            <h2 id="marketing" class="reveal">Marketing & Growth</h2>
+            <div class="grid cols-3">
+                <div class="card reveal">
+                    <h3>SEO</h3>
+                    <p class="subtitle">Audits, content strategy</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Performance Ads</h3>
+                    <p class="subtitle">Google, Meta, ROAS</p>
+                </div>
+                <div class="card reveal">
+                    <h3>Analytics</h3>
+                    <p class="subtitle">GA4, dashboards</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container grid cols-3">
+                <div>
+                    <a class="brand" href="index.html"
+                        ><img src="assets/logo.svg" alt="CrewLance logo" /><span
+                            >CrewLance</span
+                        ></a
+                    >
+                    <p style="margin-top: 8px">
+                        The collaboration layer for freelancers.
+                    </p>
+                </div>
+                <div>
+                    <strong>Product</strong>
+                    <ul
+                        style="
+                            margin: 10px 0 0;
+                            padding: 0;
+                            list-style: none;
+                            color: #555;
+                        "
+                    >
+                        <li>Collaborations board</li>
+                        <li>Escrow payments</li>
+                        <li>Ratings & reviews</li>
+                        <li>Private chat</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>Company</strong>
+                    <ul
+                        style="
+                            margin: 10px 0 0;
+                            padding: 0;
+                            list-style: none;
+                            color: #555;
+                        "
+                    >
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Terms</a> · <a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 18px">
+                <small>© 2025 CrewLance.</small>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

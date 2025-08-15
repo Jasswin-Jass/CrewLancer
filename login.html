@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign In · CrewLance</title>
+        <meta
+            name="description"
+            content="Freelancer-to-freelancer collaboration platform with escrow and revenue splits."
+        />
+        <link rel="icon" href="assets/logo.svg" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container nav">
+                <a class="brand" href="index.html"
+                    ><img src="assets/logo.svg" alt="CrewLance logo" /><span
+                        class="xlfont"
+                        >CrewLance</span
+                    ></a
+                >
+                <nav class="navlinks" aria-label="Primary">
+                    <a href="categories.html">Categories</a>
+                    <a href="collaborations.html">Collaborations</a>
+                    <a href="creat-collab.html">Creat Colab</a>
+                    <a href="how-it-works.html">How it Works</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a class="button cta" href="login.html">Sign In</a>
+                </nav>
+                <div class="mobile">
+                    <button
+                        class="button ghost"
+                        data-toggle
+                        aria-label="Open menu"
+                        style="background-color: #4b007e"
+                    >
+                        Menu
+                    </button>
+                </div>
+            </div>
+            <div class="drawer" data-drawer>
+                <a href="categories.html">Categories</a>
+                <a href="collaborations.html">Collaborations</a>
+                <a href="creat-collab.html">Creat Colab</a>
+                <a href="how-it-works.html">How it Works</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </header>
+
+        <main class="container section">
+            <div class="grid cols-2" style="align-items: center">
+                <div class="reveal">
+                    <h1 class="title" style="font-size: 40px">Welcome back</h1>
+                    <p class="subtitle">
+                        Access your collaborations, escrow, and invites.
+                    </p>
+                    <form class="card" data-demo-form>
+                        <label
+                            >Email<input class="input" type="email" required
+                        /></label>
+                        <label style="margin-top: 10px"
+                            >Password<input
+                                class="input"
+                                type="password"
+                                required
+                        /></label>
+                        <button
+                            class="button"
+                            type="submit"
+                            data-label="Sign In"
+                            style="margin-top: 12px"
+                        >
+                            Sign In
+                        </button>
+                        <div
+                            data-msg
+                            class="subtitle"
+                            style="margin-top: 8px"
+                        ></div>
+                    </form>
+                </div>
+                <div class="reveal">
+                    <div class="card">
+                        <strong>New here?</strong>
+                        <p class="subtitle">
+                            Create an account to post collaborations and invite
+                            pros.
+                        </p>
+                        <a class="button" href="#">Create account</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container grid cols-3">
+                <div>
+                    <a class="brand" href="index.html"
+                        ><img src="assets/logo.svg" alt="CrewLance logo" /><span
+                            >CrewLance</span
+                        ></a
+                    >
+                    <p style="margin-top: 8px">
+                        The collaboration layer for freelancers.
+                    </p>
+                </div>
+                <div>
+                    <strong>Product</strong>
+                    <ul
+                        style="
+                            margin: 10px 0 0;
+                            padding: 0;
+                            list-style: none;
+                            color: #555;
+                        "
+                    >
+                        <li>Collaborations board</li>
+                        <li>Escrow payments</li>
+                        <li>Ratings & reviews</li>
+                        <li>Private chat</li>
+                    </ul>
+                </div>
+                <div>
+                    <strong>Company</strong>
+                    <ul
+                        style="
+                            margin: 10px 0 0;
+                            padding: 0;
+                            list-style: none;
+                            color: #555;
+                        "
+                    >
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="#">Terms</a> · <a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 18px">
+                <small>© 2025 CrewLance.</small>
+            </div>
+        </footer>
+        <script src="app.js"></script>
+    </body>
+</html>

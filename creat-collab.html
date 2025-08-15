@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create Collaboration Post</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="assets/logo.svg" />
+
+        <style>
+            :root {
+                --brand-main: #4b007e; /* Main brand color */
+                --brand-hover: #6a00cc; /* Hover & highlights */
+                --brand-light: #f3e8ff; /* Backgrounds & dividers */
+                --text-dark: #1f1f1f; /* Headings */
+                --text-light: #6b6b6b; /* Secondary text */
+            }
+
+            body {
+                margin: 0;
+                background-color: var(--brand-light);
+                font-family: Arial, sans-serif;
+            }
+
+            .split-container {
+                display: flex;
+                min-height: 100vh;
+            }
+
+            /* Left side (form) - 60% */
+            .form-section {
+                flex: 0 0 60%;
+                background-color: white;
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+            }
+
+            .form-section h2 {
+                color: var(--brand-main);
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            .form-label {
+                color: var(--text-dark);
+                font-weight: 500;
+            }
+
+            .form-control {
+                border-radius: 8px;
+                padding: 10px;
+                border: 1px solid #ccc;
+            }
+
+            .form-control:focus {
+                border-color: var(--brand-main);
+                box-shadow: 0 0 0 0.2rem rgba(153, 0, 255, 0.25);
+            }
+
+            .btn-brand {
+                background-color: var(--brand-main);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                padding: 10px 20px;
+                font-size: 1rem;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn-brand:hover {
+                background-color: var(--brand-hover);
+            }
+
+            /* Right side (details) - 40% */
+            .info-section {
+                flex: 0 0 40%;
+                background-color: var(--brand-light);
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .info-section h3 {
+                color: var(--brand-hover);
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+
+            .info-section p {
+                color: var(--text-light);
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            @media (max-width: 992px) {
+                .split-container {
+                    flex-direction: column;
+                }
+                .form-section,
+                .info-section {
+                    flex: 100%;
+                    padding: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container nav">
+                <a class="brand" href="index.html"
+                    ><img src="assets/logo.svg" alt="CrewLance logo" /><span
+                        class="xlfont"
+                        >CrewLance</span
+                    ></a
+                >
+                <nav class="navlinks" aria-label="Primary">
+                    <a href="categories.html">Categories</a>
+                    <a href="collaborations.html">Collaborations</a>
+                    <a href="creat-collab.html">Creat Colab</a>
+                    <a href="how-it-works.html">How it Works</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a class="button cta" href="login.html">Sign In</a>
+                </nav>
+                <div class="mobile">
+                    <button
+                        class="button ghost"
+                        data-toggle
+                        aria-label="Open menu"
+                        style="background-color: #4b007e"
+                    >
+                        Menu
+                    </button>
+                </div>
+            </div>
+            <div class="drawer" data-drawer>
+                <a href="categories.html">Categories</a>
+                <a href="collaborations.html">Collaborations</a>
+                <a href="creat-collab.html">Creat Colab</a>
+                <a href="how-it-works.html">How it Works</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </header>
+        <div class="split-container">
+            <!-- Left: Form (60%) -->
+            <div class="form-section">
+                <h2>Create a Collaboration Post</h2>
+                <form id="collabForm">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Post Title</label>
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            class="form-control"
+                            placeholder="e.g. Need a Frontend Developer"
+                            required
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="description" class="form-label"
+                            >Description</label
+                        >
+                        <textarea
+                            id="description"
+                            name="description"
+                            class="form-control"
+                            rows="4"
+                            placeholder="Describe your project and requirements..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="skills" class="form-label"
+                            >Required Skills</label
+                        >
+                        <input
+                            type="text"
+                            id="skills"
+                            name="skills"
+                            class="form-control"
+                            placeholder="e.g. HTML, CSS, JavaScript"
+                            required
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="budget" class="form-label"
+                            >Budget ($)</label
+                        >
+                        <input
+                            type="number"
+                            id="budget"
+                            name="budget"
+                            class="form-control"
+                            placeholder="e.g. 500"
+                            required
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="timeline" class="form-label"
+                            >Timeline</label
+                        >
+                        <input
+                            type="text"
+                            id="timeline"
+                            name="timeline"
+                            class="form-control"
+                            placeholder="e.g. 3 weeks"
+                            required
+                        />
+                    </div>
+
+                    <button type="submit" class="btn btn-brand">
+                        Post Collaboration
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: Info (40%) -->
+            <div class="info-section">
+                <h3>Why Post a Collaboration?</h3>
+                <p>
+                    Find the right partners to bring your ideas to life. Whether
+                    you’re building an app, designing a product, or launching a
+                    startup, collaboration connects you to skilled
+                    professionals.
+                </p>
+
+                <h3>Tips for a Great Post</h3>
+                <p>
+                    Be clear about your requirements, budget, and timeline. The
+                    more details you provide, the better your chances of
+                    attracting the right collaborators.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            document
+                .getElementById("collabForm")
+                .addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    alert(
+                        "✅ Your collaboration post has been created successfully!"
+                    );
+                    this.reset();
+                });
+        </script>
+    </body>
+</html>
